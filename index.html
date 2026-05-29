@@ -28,6 +28,7 @@
         .nav-link:hover::after, .nav-link.active::after { width: 100%; }
 
         .hero-arc { border: 1px solid rgba(230, 220, 198, 0.15); border-radius: 50%; position: absolute; right: 0; top: 50%; transform: translateY(-50%) translateX(50%); pointer-events: none; }
+        .arc-c { border: 1px solid rgba(230, 220, 198, 0.15); border-radius: 50%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); pointer-events: none; }
 
         .practice-card { position: relative; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden; }
         .practice-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(6, 18, 36, 0.05); }
@@ -97,30 +98,18 @@
             </a>
         </header>
 
-        <!-- MOBILE family constellation: photos float through the hero's negative space (desktop uses the right column) -->
+        <!-- MOBILE: two family photos peek in beside the logo, above the headline (desktop uses the right column) -->
         <div class="lg:hidden absolute inset-0 z-[1] overflow-hidden pointer-events-none" aria-hidden="true">
-            <div class="absolute right-0 top-[46%] -translate-y-1/2 translate-x-10 text-[230px] font-serif text-white opacity-[0.045] leading-none select-none">K</div>
-            <div class="hero-arc w-[520px] h-[520px] arc-spin-mid"></div>
-            <div class="hero-arc w-[760px] h-[760px] arc-spin-slow"></div>
-
-            <div class="face-bubble float-a" style="width:56px; height:56px; top:11%; right:8%;">
+            <div class="hero-arc w-[560px] h-[560px] arc-spin-slow" style="top:20%;"></div>
+            <div class="face-bubble float-a" style="width:50px; height:50px; top:4.5%; left:55%;">
                 <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3C8CP6tOq6Kec0rm7guMb0rv0HM/hf_20260521_021729_ce41bce8-3721-4b93-815f-4582216234c0.png" alt="">
             </div>
-            <div class="face-bubble float-b" style="width:44px; height:44px; top:7.5%; left:32%;">
+            <div class="face-bubble float-b" style="width:40px; height:40px; top:6.5%; left:34%;">
                 <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3C8CP6tOq6Kec0rm7guMb0rv0HM/hf_20260521_021731_011b208d-d655-4ba5-b154-f5d16b655a1b.png" alt="">
-            </div>
-            <div class="face-bubble float-c" style="width:62px; height:62px; top:27.5%; right:3%;">
-                <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3C8CP6tOq6Kec0rm7guMb0rv0HM/hf_20260521_021733_6c02a0b6-1b1d-48ce-9f2d-fafe3b7dacbb.png" alt="">
-            </div>
-            <div class="face-bubble float-d" style="width:52px; height:52px; top:61%; right:8%;">
-                <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3C8CP6tOq6Kec0rm7guMb0rv0HM/hf_20260520_220057_1c69c1ad-39af-4de3-af96-e8ad4ed065c2.png" alt="">
-            </div>
-            <div class="face-bubble float-e" style="width:74px; height:74px; bottom:8%; right:28%;">
-                <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3C8CP6tOq6Kec0rm7guMb0rv0HM/hf_20260521_021736_7ab6edf0-101d-40c0-b884-f5c76674eee1.png" alt="">
             </div>
         </div>
 
-        <div class="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-16 pt-12 pb-32 lg:py-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-16 pt-12 pb-16 lg:py-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div class="col-span-1 lg:col-span-6 flex flex-col justify-center relative z-20 scroll-fade">
                 <h1 class="font-serif text-white mb-8 tracking-tight"
                     style="font-size: clamp(2.75rem, 5.5vw, 5rem); line-height: 1.02; max-width: 14ch;">
@@ -142,6 +131,22 @@
                     <div class="flex items-center gap-2">
                         <span class="text-sand text-lg tracking-widest">★★★★★</span>
                         <span class="text-sm font-light text-white">4.8 across 273 Google reviews</span>
+                    </div>
+                </div>
+
+                <!-- MOBILE: the families we serve, orbiting (desktop uses the right column) -->
+                <div class="lg:hidden relative h-[250px] mt-14 overflow-hidden" aria-hidden="true">
+                    <div class="arc-c absolute text-[190px] font-serif text-white opacity-[0.05] leading-none select-none" style="border:0; width:auto; height:auto;">K</div>
+                    <div class="arc-c w-[230px] h-[230px]"></div>
+                    <div class="arc-c w-[380px] h-[380px]"></div>
+                    <div class="face-bubble float-c" style="width:88px; height:88px; top:6%; left:9%;">
+                        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3C8CP6tOq6Kec0rm7guMb0rv0HM/hf_20260521_021733_6c02a0b6-1b1d-48ce-9f2d-fafe3b7dacbb.png" alt="">
+                    </div>
+                    <div class="face-bubble float-e" style="width:70px; height:70px; top:34%; right:10%;">
+                        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3C8CP6tOq6Kec0rm7guMb0rv0HM/hf_20260521_021736_7ab6edf0-101d-40c0-b884-f5c76674eee1.png" alt="">
+                    </div>
+                    <div class="face-bubble float-d" style="width:58px; height:58px; bottom:6%; left:40%;">
+                        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3C8CP6tOq6Kec0rm7guMb0rv0HM/hf_20260520_220057_1c69c1ad-39af-4de3-af96-e8ad4ed065c2.png" alt="">
                     </div>
                 </div>
             </div>
